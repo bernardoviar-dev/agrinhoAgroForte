@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroForte | O Portal do Agro Brasileiro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Agro<span>Forte</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#panorama">Panorama Brasil</a></li>
+                <li><a href="#parana">Foco Paraná</a></li>
+                <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                <li><a href="#tecnologia">Tecnologia</a></li>
+                <li><a href="#ciencia">Ciência & Futuro</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" class="theme-btn">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="badge-ouro">Potência Agroambiental</span>
+            <h1>O Futuro Alinhado à <span>Sustentabilidade</span></h1>
+            <p>Conheça a verdadeira força do agronegócio brasileiro: o setor que movimenta a economia nacional, preserva florestas nativas e lidera a produção global de alimentos.</p>
+            <div class="hero-btns">
+                <a href="#panorama" class="btn-ouro">Explorar Dados Nacionais</a>
+                <a href="#parana" class="btn-borda">Ver Painel Paraná</a>
+            </div>
+        </div>
+    </section>
+    <section id="panorama" class="secao">
+        <div class="titulo-secao">
+            <h2>Brasil: O Celeiro do Mundo</h2>
+            <p>Com mais de 20% do PIB nacional e respondendo por um terço dos empregos no país, o agro brasileiro une produtividade em larga escala e segurança alimentar global.</p>
+        </div>
+        <div class="conteudo-duplo">
+            <div class="caixa-grafico">
+                <h3>Participação na Production de Grãos</h3>
+                
+                <div class="linha-grafico">
+                    <span class="nome-estado">Mato Grosso (Império da Soja e Milho) <b class="cor-foco">30%</b></span>
+                    <div class="fundo-barra"><div class="barra-progresso" data-width="30%"></div></div>
+                </div>
+                
+                <div class="linha-grafico">
+                    <span class="nome-estado">Paraná (Líder em Produtividade por Hectare) <b class="cor-foco">25%</b></span>
+                    <div class="fundo-barra"><div class="barra-progresso barra-pr" data-width="25%"></div></div>
+                </div>
+                
+                <div class="linha-grafico">
+                    <span class="nome-estado">Goiás (Alta Tecnologia no Centro-Oeste) <b class="cor-foco">15%</b></span>
+                    <div class="fundo-barra"><div class="barra-progresso" data-width="15%"></div></div>
+                </div>
+                
+                <div class="linha-grafico">
+                    <span class="nome-estado">Rio Grande do Sul (Tradição e Grãos de Inverno) <b class="cor-foco">12%</b></span>
+                    <div class="fundo-barra"><div class="barra-progresso" data-width="12%"></div></div>
+                </div>
+            </div>
+
+            <div class="caixa-abas">
+                <div class="botoes-abas">
+                    <button class="btn-aba active" data-tab="centro">Centro-Oeste</button>
+                    <button class="btn-aba" data-tab="sudeste">Sudeste</button>
+                    <button class="btn-aba" data-tab="nordeste">MATOPIBA</button>
+                </div>
+                
+                <div class="texto-aba active" id="centro">
+                    <h4>Grandes Extensões e Mecanização</h4>
+                    <p>Estados como Mato Grosso e Goiás lideram o volume total do país. A produção é baseada no plantio massivo de soja seguido imediatamente pelo milho safrinha. As propriedades utilizam frotas pesadas de colheitadeiras e focam fortemente na exportação direta via corredores logísticos rodoferroviários.</p>
+                </div>
+                
+                <div class="texto-aba" id="sudeste">
+                    <h4>Cana, Café e Bioenergia</h4>
+                    <p>O Sudeste destaca-se pelo valor agregado de suas culturas. São Paulo comanda a produção de cana-de-açúcar, transformando a biomassa em etanol e energia limpa. Nas terras montanhosas de Minas Gerais e do Espírito Santo, o café brasileiro bate recordes mundiais de qualidade e grãos especiais certificados.</p>
+                </div>
+                
+                <div class="texto-aba" id="nordeste">
+                    <h4>A Nova Fronteira Agrícola</h4>
+                    <p>A região do MATOPIBA (Maranhão, Tocantins, Piauí e Bahia) expande o agronegócio no bioma Cerrado. Com relevo plano ideal para a mecanização e forte investimento em sementes e irrigação, a região atrai investimentos globais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="parana" class="secao fundo-alternativo">
+        <div class="titulo-secao">
+            <span class="tag">Destaque Regional</span>
+            <h2>Paraná: O Motor Agroindustrial</h2>
+            <p>O modelo paranaense é referência internacional. Cooperativas transformam pequenas propriedades familiares em polos exportadores altamente eficientes e sustentáveis.</p>
+        </div>
+
+        <div class="grade-cards">
+            <div class="card-foto" onclick="abrirModal('modal-coop')">
+                <div class="imagem-card" style="background-image: url('imagens/silos-graos.png');"></div>
+                <div class="card-info">
+                    <h3><i class="fa-solid fa-users-gear"></i> Força Cooperativista</h3>
+                    <p>Bilionárias, estruturas como Coamo, Lar e C.Vale organizam o produtor rural e verticalizam a produção de alimentos.</p>
+                    <span class="link-clique">Ver detalhes do modelo &rarr;</span>
+                </div>
+            </div>
+            <div class="card-foto" onclick="abrirModal('modal-proteina')">
+                <div class="imagem-card" style="background-image: url('imagens/gado-nelore.png');"></div>
+                <div class="card-info">
+                    <h3><i class="fa-solid fa-cow"></i> Aves, Suínos e Peixes</h3>
+                    <p>O Oeste do Paraná lidera o abate e processamento integrado de suínos e aves, além do avanço gigante na piscicultura de tilápias.</p>
+                    <span class="link-clique">Ver automação animal &rarr;</span>
+                </div>
+            </div>
+
+            <div class="card-foto" onclick="abrirModal('modal-leite')">
+                <div class="imagem-card" style="background-image: url('imagens/trator-parana.png');"></div>
+                <div class="card-info">
+                    <h3><i class="fa-solid fa-tractor"></i> O Cinturão do Leite</h3>
+                    <p>A região de Castro e Carambeí destaca-se nacionalmente pela genética bovina holandesa e sistemas de ordenha computadorizados.</p>
+                    <span class="link-clique">Ver tecnologia do leite &rarr;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sustentabilidade" class="secao">
+        <div class="titulo-secao">
+            <h2>Práticas Reais de Sustentabilidade</h2>
+            <p>O agro forte do Brasil produz preservando. Conheça as técnicas que protegem o solo de ponta a ponta.</p>
+        </div>
+
+        <div class="linha-tempo">
+            <div class="item-tempo">
+                <div class="numero-tempo">01</div>
+                <div class="texto-tempo">
+                    <h3>Sistema de Plantio Direto (SPD)</h3>
+                    <p>Diferente de outros países que reviram o solo deixando a terra desprotegida, o produtor brasileiro planta diretamente sobre a palha da colheita anterior. Essa camada orgânica protege o solo contra o impacto das chuvas fortes, elimina as erosões, segura a umidade e retém o carbono no chão.</p>
+                </div>
+            </div>
+            
+            <div class="item-tempo">
+                <div class="numero-tempo">02</div>
+                <div class="texto-tempo">
+                    <h3>Integração Lavoura-Pecuária-Floresta (ILPF)</h3>
+                    <p>O sistema combina a produção de grãos, carne e madeira na mesma fazenda. O gado pasta na sombra das árvores plantadas, o esterco dos animais aduba a lavoura de soja que virá depois, e as árvores sequestram gases poluentes. Essa técnica recupera pastagens degradadas.</p>
+                </div>
+            </div>
+            
+            <div class="item-tempo">
+                <div class="numero-tempo">03</div>
+                <div class="texto-tempo">
+                    <h3>O Boom dos Bioinsumos Nacionais</h3>
+                    <p>O Brasil é líder internacional no uso de biológicos. Defensivos químicos pesados estão dando lugar a microrganismos, fungos benéficos e insetos predadores naturais criados em laboratório. Isso reduz custos e mantém o equilíbrio ecológico das fazendas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="tecnologia" class="secao fundo-alternativo">
+        <div class="titulo-secao">
+            <h2>Tecnologia Embarcada no Campo</h2>
+            <p>Maquinários inteligentes e conectividade transformando fazendas em centros tecnológicos de alta performance.</p>
+        </div>
+
+        <div class="conteudo-duplo">
+            <div class="lista-tecnologias">
+                <div class="item-tech">
+                    <i class="fa-solid fa-satellite"></i>
+                    <div>
+                        <h4>Maquinários Autônomos e Telemetria</h4>
+                        <p>Tratores, plantadeiras e pulverizadores operam guiados por GPS centimétrico. Os computadores de bordo aplicam sementes e fertilizantes em taxas variáveis, dosando a quantidade exata necessária para cada tipo de solo.</p>
+                    </div>
+                </div>
+                <div class="item-tech">
+                    <i class="fa-solid fa-drone"></i>
+                    <div>
+                        <h4>Drones de Varredura Aérea</h4>
+                        <p>Equipados com sensores térmicos, os drones mapeiam as lavouras e geram dados precisos. A inteligência artificial analisa as imagens e aponta pragas ou falta de água antes que a plantação sofra.</p>
+                    </div>
+                </div>
+                <div class="item-tech">
+                    <i class="fa-solid fa-network-wired"></i>
+                    <div>
+                        <h4>Rastreabilidade e Blockchain</h4>
+                        <p>Os mercados exigentes da Europa e Ásia conseguem escanear um QR Code e rastrear o trajeto do grão ou da carne desde a fazenda de origem, provando que o produto não veio de áreas desmatadas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="imagem-tech-container">
+                <img src="imagens/tecnologia.png" alt="Tecnologia na lavoura brasileira">
+            </div>
+        </div>
+    </section>
+
+    <section id="ciencia" class="secao">
+        <div class="titulo-secao">
+            <h2>Ciência e Sucessão no Campo</h2>
+            <p>A pesquisa científica da EMBRAPA e o novo perfil do jovem gestor rural.</p>
+        </div>
+
+        <div class="conteudo-duplo">
+            <div class="imagem-tech-container">
+                <img src="imagens/ciencia.png" alt="Lavoura verdejante do Brasil">
+            </div>
+            <div class="texto-ciencia">
+                <h3>O Legado da Ciência Nacional</h3>
+                <p>O Brasil transformou o solo do Cerrado de infértil para um dos maiores produtores do planeta graças à ciência da EMBRAPA e centros regionais como o IDR-Paraná. O desenvolvimento de sementes perfeitamente adaptadas ao nosso clima tropical é o pilar que garante safras recordes ano após ano.</p>
+                <br>
+                <h3>A Nova Geração do Agronegócio</h3>
+                <p>A conectividade no campo mudou o perfil do produtor rural. A sucessão familiar agora traz jovens graduados de volta às propriedades rurais. O antigo agricultor deu lugar ao gestor de agronegócio, que controla custos em planilhas, gerencia equipes via aplicativos e analisa dados climáticos e de mercado em tempo real.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Portal AgroForte - O Futuro Sustentável do Campo Brasileiro.</p>
+    </footer>
+
+    <div id="modal-coop" class="janela-modal" onclick="fecharModalAoClicarFora(event, 'modal-coop')">
+        <div class="conteudo-modal">
+            <span class="botao-fechar" onclick="fecharModal('modal-coop')">&times;</span>
+            <h2>O Modelo Cooperativo do Paraná</h2>
+            <hr>
+            <p>O segredo do sucesso paranaense está na verticalização industrial. Ao invés de vender apenas o grão bruto colhido com pequenas margens de lucro, o sistema une milhares de famílias associadas em estruturas que processam a soja em óleo refinado e o milho em ração.</p>
+        </div>
+    </div>
+
+    <div id="modal-proteina" class="janela-modal" onclick="fecharModalAoClicarFora(event, 'modal-proteina')">
+        <div class="conteudo-modal">
+            <span class="botao-fechar" onclick="fecharModal('modal-proteina')">&times;</span>
+            <h2>Oeste do Paraná: Polo de Suinocultura e Avicultura</h2>
+            <hr>
+            <p>Regiões como Toledo, Cascavel e Palotina abrigam os frigoríficos e complexos industriais de abate de aves e suínos mais tecnológicos da América Latina. Os galpões contam com automação completa e controle de climatização exato.</p>
+        </div>
+    </div>
+
+    <div id="modal-leite" class="janela-modal" onclick="fecharModalAoClicarFora(event, 'modal-leite')">
+        <div class="conteudo-modal">
+            <span class="botao-fechar" onclick="fecharModal('modal-leite')">&times;</span>
+            <h2>Campos Gerais: A Vanguarda do Leite</h2>
+            <hr>
+            <p>Os municípios de Castro e Carambeí formam a bacia leiteira padrão ouro do país, unindo alta genética bovina da raça holandesa e sistemas modernos de ordenha robotizada comandados por Big Data.</p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
